@@ -1,4 +1,4 @@
-# Setup & Run
+# Setup & Solution Overview
 
 ## Requirements
 
@@ -62,12 +62,24 @@ A character roster: each card shows a randomized header image and
 Health/Attack/Defense counters with +/- controls. "Add Character" appends
 a new card (stats at 0, random image); "Attack All Characters" zeroes
 every character's Health. Layout is responsive — 3 cards per row down to
-2 at 900px and 1 at 580px viewport width.
+2 at 900px and 1 at 580px viewport width. Cards can also be individually
+removed via the "×" button (bonus).
 
-## Stack notes
+## Solution overview
 
-- **Vite + React + TypeScript**, scaffolded with `create-vite`.
-- **pnpm** as the package manager.
-- **Vitest + React Testing Library** for tests.
+**Stack:** Vite + React 19 + TypeScript, scaffolded with `create-vite`.
+`pnpm` as the package manager. CSS Modules for component-scoped styling.
+Vitest + React Testing Library for tests.
+
+**Architecture:** Presentational components (`GlobalActions`, `CardGrid`,
+`Card`, `StatRow`) are kept free of state — all roster state (the
+character list, and adding/removing/attacking/adjusting stats) lives in
+a single `useCharacters` hook and is passed down as props. With one
+shared piece of state and two consumers (`GlobalActions` and the card
+list), a hook was enough — no Redux or Context needed.
+
+**Testing:** unit tests for `useCharacters`, component tests for each
+presentational component, and a couple of integration tests through
+`App` for the main user flows (add, attack all, adjust a stat).
 
 See `README.md` for the original exercise spec.

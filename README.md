@@ -1,5 +1,12 @@
 # Take Home Interview Exercise
 
+## Submission
+
+**Candidate:** Gustavo Cruz Laura
+**Position:** Fullstack Software Engineer
+
+See `SETUP.md` for setup/run instructions and a brief solution overview.
+
 ## Introduction
 
 **COMPLETION TIME:** 2 hours
