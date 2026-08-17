@@ -10,6 +10,7 @@ function App() {
 
   return (
     <div className={styles.container}>
+      <h1 className={styles.srOnly}>Character Roster</h1>
       <GlobalActions onAddCharacter={addCharacter} onAttackAll={attackAll} />
       <CardGrid>
         {characters.map((character) => (
