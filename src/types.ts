@@ -1,4 +1,4 @@
-import type { CharacterImage } from './data/images';
+import type { CharacterImage } from './utils/images';
 
 export type StatName = 'health' | 'attack' | 'defense';
 

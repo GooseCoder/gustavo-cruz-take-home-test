@@ -11,7 +11,10 @@ function StatRow({ label, value, onIncrement, onDecrement }: StatRowProps) {
   return (
     <div className={styles.row}>
       <span className={styles.label}>
-        {label} <span className={styles.value}>{value}</span>
+        {label}{' '}
+        <span className={styles.value} data-testid={`stat-value-${label}`}>
+          {value}
+        </span>
       </span>
       <span className={styles.buttons}>
         <button

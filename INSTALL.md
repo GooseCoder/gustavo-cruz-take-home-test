@@ -45,6 +45,17 @@ auto-increment/`--port` behavior as `dev`).
 pnpm lint
 ```
 
+## Test
+
+```sh
+pnpm test         # run once (CI mode)
+pnpm test:watch   # watch mode
+```
+
+Vitest + React Testing Library. Covers the `useCharacters` state hook
+(unit) and key user flows through `App` (integration): incrementing a
+stat, adding a character, attacking all characters.
+
 ## Application
 
 A character roster: each card shows a randomized header image and
@@ -57,5 +68,6 @@ every character's Health. Layout is responsive — 3 cards per row down to
 
 - **Vite + React + TypeScript**, scaffolded with `create-vite`.
 - **pnpm** as the package manager.
+- **Vitest + React Testing Library** for tests.
 
 See `README.md` for the original exercise spec.
