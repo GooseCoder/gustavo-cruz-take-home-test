@@ -1,0 +1,16 @@
+.bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.action {
+  background: #e4e6ea;
+  color: #182432;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.action:hover {
+  background: #cfd2d8;
+}

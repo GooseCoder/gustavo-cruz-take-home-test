@@ -1,0 +1,49 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.row + .row {
+  margin-top: 12px;
+}
+
+.label {
+  font-size: 1rem;
+}
+
+.value {
+  font-weight: 700;
+  margin-left: 0.4em;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.buttons button {
+  width: 2em;
+  padding: 0.3em 0;
+  border-radius: 2px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.increment {
+  background: var(--btn-increment);
+}
+
+.increment:hover {
+  background: var(--btn-increment-hover);
+}
+
+.decrement {
+  background: var(--btn-decrement);
+}
+
+.decrement:hover {
+  background: var(--btn-decrement-hover);
+}
