@@ -2,7 +2,7 @@
 
 ## Submission
 
-**Candidate:** Gustavo Cruz Laura
+**Candidate:** Gustavo Cruz Laura  
 **Position:** Fullstack Software Engineer
 
 See `SETUP.md` for setup/run instructions and a brief solution overview.
