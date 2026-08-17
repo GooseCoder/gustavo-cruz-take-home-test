@@ -5,6 +5,7 @@ import styles from './Card.module.css';
 interface CardProps {
   character: Character;
   onChangeStat: (stat: StatName, delta: number) => void;
+  onRemove: () => void;
 }
 
 const STAT_ROWS: { stat: StatName; label: string }[] = [
@@ -13,9 +14,17 @@ const STAT_ROWS: { stat: StatName; label: string }[] = [
   { stat: 'defense', label: 'Defense' },
 ];
 
-function Card({ character, onChangeStat }: CardProps) {
+function Card({ character, onChangeStat, onRemove }: CardProps) {
   return (
     <li className={styles.card}>
+      <button
+        type="button"
+        className={styles.remove}
+        aria-label="Remove character"
+        onClick={onRemove}
+      >
+        ×
+      </button>
       <img
         className={styles.image}
         src={character.image.url}
