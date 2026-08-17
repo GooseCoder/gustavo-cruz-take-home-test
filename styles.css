@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; 
+}
+
+:root {
+  --main-bg-color: #182432;
+  --card-bg: #283243;
+  --card-border: #4f5e74;
+  --btn-increment: #4caf50;
+  --btn-increment-hover: #419a45;
+  --btn-decrement: #f95359;
+  --btn-decrement-hover: #ed3c39;
+}
+
+html,
+body {
+  height: 100%; 
+}
+
+body {
+  margin: 0; 
+}
+
+body {
+  background-color: var(--main-bg-color); 
+}
+
+html {
+  color: #bbbfc5;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.25;
+}
+
+button {
+  color: #fff;
+  padding: 0.625em 1.25em;
+  border-radius: 2px;
+  box-shadow: none;
+  border: 0;
+}
